@@ -34,7 +34,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <body>
     <h2>Đăng nhập</h2>
     <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
-        <label>Tên đăng nhập:</label>
+        <label>Tên đăng nhậpp:</label>
         <input type="text" name="username"><br><br>
         <label>Mật khẩu:</label>
         <input type="password" name="password"><br><br>
