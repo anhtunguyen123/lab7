@@ -1,12 +1,8 @@
 <?php
-// Thiết lập thông tin kết nối đến database
 $servername = "mydb-lab7.cndynac4jyld.us-east-1.rds.amazonaws.com";
 $username = "admin";
 $password = "anhtu123456";
 $dbname = "mydb-lab7";
-// Tạo kết nối đến database
-$conn = new mysqli($servername, $username, $password, $dbname);
-// Kiểm tra kết nối
 $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Kết nối không thành công: " . $conn->connect_error);
@@ -38,7 +34,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <body>
     <h2>Đăng nhập</h2>
     <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
-        <label>Tên đăng nhậpp:</label>
+        <label>Tên đăng nhập:</label>
         <input type="text" name="username"><br><br>
         <label>Mật khẩu:</label>
         <input type="password" name="password"><br><br>
